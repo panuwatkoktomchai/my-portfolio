@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import 'assets/style/Navbar.scss'
-import Modal from 'components/app/Modal'
+import Modal from 'components/Modal'
 import Lanugage from 'components/Language'
 
 class Navbar extends React.Component {
