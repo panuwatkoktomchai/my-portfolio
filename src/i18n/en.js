@@ -2,7 +2,7 @@ const en = {
   'navbar': {
     'me': 'Me',
     'cv'  : 'CV',
-    'education' : 'Education',
+    'hobbie' : 'Hobbies',
     'input-search': 'Search...',
     'lanugage': 'language',
     'modal': {
