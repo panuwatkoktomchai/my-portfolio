@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Lanugage() {
   const { t, i18n } = useTranslation('language')
   return(
@@ -31,7 +32,7 @@ function IistItem(props) {
         <img src={`./images/${lng}.png`} alt={`logo-${lng}`} className="w3-bar-item w3-circle w3-hide-small" style={{width:85}}/>
         <div className="w3-bar-item">
           <span className="w3-large"> { name } </span><br/>
-          <span> { des } </span>
+          <span> { des }  </span>{i18n.language == lng ? (<FontAwesomeIcon className="w3-text-orange" icon="check-square"/>) : ''}
         </div>
       </li>
     )
