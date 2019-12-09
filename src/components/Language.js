@@ -28,11 +28,11 @@ function Lanugage() {
 function IistItem(props) {
     const { lng, name, des, i18n } = props
     return (
-      <li className={`w3-bar ${i18n.language != lng ? 'w3-button' : ''} w3-white`} onClick={() => {if(i18n.language != lng ){i18n.changeLanguage(props.lng)}}}>
+      <li className={`w3-bar ${i18n.language !== lng ? 'w3-button' : ''} w3-white`} onClick={() => {if(i18n.language !== lng ){i18n.changeLanguage(props.lng)}}}>
         <img src={`./images/${lng}.png`} alt={`logo-${lng}`} className="w3-bar-item w3-circle w3-hide-small" style={{width:85}}/>
         <div className="w3-bar-item">
           <span className="w3-large"> { name } </span><br/>
-          <span> { des }  </span>{i18n.language == lng ? (<FontAwesomeIcon className="w3-text-orange" icon="check-square"/>) : ''}
+          <span> { des }  </span>{i18n.language === lng ? (<FontAwesomeIcon className="w3-text-orange" icon="check-square"/>) : ''}
         </div>
       </li>
     )

@@ -8,11 +8,11 @@ function Modal(props) {
   
   // When change language. Modal will hidden
   useEffect(() => {
-    if(listenLng != i18n.language){
+    if(listenLng !== i18n.language){
       props.setVisible()
       setListen(i18n.language)
     }
-  })
+  }, [listenLng, i18n.language, props])
   
   return (
     <div className="w3-modal" style={{display: props.visible ? 'block' : 'none'}}>

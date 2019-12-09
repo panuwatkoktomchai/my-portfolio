@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './App.scss';
 import './index.css';
 import './config-fortawesome'
 import App from './App';
