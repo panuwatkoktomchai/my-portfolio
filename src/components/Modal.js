@@ -1,7 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 function Modal(props) {
+  const { i18n } = useTranslation()
+  const [ listenLng, setListen] = useState(i18n.language)
+  
+  // When change language. Modal will hidden
+  useEffect(() => {
+    if(listenLng != i18n.language){
+      props.setVisible()
+      setListen(i18n.language)
+    }
+  })
+  
   return (
     <div className="w3-modal" style={{display: props.visible ? 'block' : 'none'}}>
       <div className={`w3-clean w3-modal-content w3-animate-${props.animate} w3-card-4`}>
