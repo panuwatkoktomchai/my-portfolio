@@ -5,6 +5,16 @@ const en = {
     'education' : 'Education',
     'input-search': 'Search...',
     'lanugage': 'language',
+  },
+  'language': {
+    'en': {
+      'name': 'English',
+      'description': 'English',
+    },
+    'th': {
+      'name': 'Thailand',
+      'description': 'ภาษาไทย'
+    }
   }
 }
 
