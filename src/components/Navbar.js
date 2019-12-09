@@ -34,7 +34,7 @@ class Navbar extends React.Component {
           <a href="/" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('education') }</a>
           <input type="text" className="w3-bar-item w3-input w3-white w3-mobile" placeholder={ t('input-search') }/>
           
-          <button onClick={setVisible} className="w3-bar-item w3-button w3-clean w3-clean w3-mobile language">
+          <button onClick={setVisible} className="w3-hover-orange w3-bar-item w3-button w3-clean w3-clean w3-mobile language">
             { t('lanugage') }: <img src="./images/en.png" alt="logo current language" width="20px"/>
           </button>
 
