@@ -25,7 +25,7 @@ class Navbar extends React.Component {
     const setVisible = () => {
       this.setState({visible: !visible})
     }
-    const { t } = this.props
+    const { t, i18n } = this.props
     return (
       <Fragment>
         <div className="w3-bar w3-light-grey w3-border custom-nav">
@@ -35,12 +35,12 @@ class Navbar extends React.Component {
           <input type="text" className="w3-bar-item w3-input w3-white w3-mobile" placeholder={ t('input-search') }/>
           
           <button onClick={setVisible} className="w3-hover-orange w3-bar-item w3-button w3-clean w3-clean w3-mobile language">
-            { t('lanugage') }: <img src="./images/en.png" alt="logo current language" width="20px"/>
+            { t('lanugage') }: <img src={`./images/${i18n.language}.png`} alt="logo current language" width="20px"/>
           </button>
 
         </div>
 
-        <Modal color="orange" title="Select language" visible={visible} setVisible={setVisible}>
+        <Modal color="orange" title={ t('modal.title') } visible={visible} setVisible={setVisible}>
           <Lanugage/>
         </Modal>
 

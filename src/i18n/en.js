@@ -5,6 +5,9 @@ const en = {
     'education' : 'Education',
     'input-search': 'Search...',
     'lanugage': 'language',
+    'modal': {
+      'title': 'Choose your language'
+    }
   },
   'language': {
     'en': {

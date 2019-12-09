@@ -4,7 +4,10 @@ const th = {
     'cv'  : 'ผลงานฉันเอง',
     'education' : 'การศึกษาฉันเอง',
     'input-search': 'ค้นหา...',
-    'lanugage': 'ภาษา'
+    'lanugage': 'ภาษา',
+    'modal': {
+      'title': 'เลือกภาษาของคุณ'
+    }
   },
   'language': {
     'en': {
