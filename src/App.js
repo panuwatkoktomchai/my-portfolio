@@ -9,6 +9,7 @@ import {
 import './i18n';
 
 const Homepage = lazy(() => import('view/Home'))
+const CV = lazy(() => import('view/Cv'))
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Suspense fallback={<LoadingOverlay/>}>
         <Switch>
           <Route path="/home" component={Homepage} key="Home-page"/>
+          <Route path="/cv" component={CV} key="Home-page"/>
         </Switch>
       </Suspense>
       </section>
