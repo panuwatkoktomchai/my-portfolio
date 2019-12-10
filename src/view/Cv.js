@@ -8,8 +8,7 @@ export default class CV extends Component {
 
   render() {
     return (
-      <embed src={pdf} width="100%" height={window.innerHeight-190}/>
-
+      <embed scrolling="no" src={pdf} width="100%" height={window.innerHeight-194}/>
     );
   }
 }

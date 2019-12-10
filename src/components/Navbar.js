@@ -29,7 +29,7 @@ class Navbar extends React.Component {
     const { t, i18n } = this.props
     return (
       <Fragment>
-        <div className="w3-bar w3-light-grey w3-border custom-nav">
+        <div className="w3-bar w3-light-grey custom-nav">
           <Link to="/home" className="w3-bar-item w3-button w3-orange w3-mobile"><b>{ t('me') }</b></Link>
           <Link to="/cv" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('cv') }</Link>
           <Link to="/education" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('hobbie') }</Link>
