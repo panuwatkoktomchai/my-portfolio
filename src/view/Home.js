@@ -12,14 +12,14 @@ class Homepage extends React.Component {
               <div className="me-title" style={{paddingTop: 10}}>
                 <h1 className="w3-text-white">Panuwat Koktomchai</h1>
                 <h2 className="w3-text-white"><b>Software	Developer</b></h2>
-                <img style={{height:250, width: 250, borderRadius: '50%'}} src="http://localhost:3000/images/th.png" alt="th.png"/>
+                <img style={{height:250, width: 250, borderRadius: '50%'}} src="./images/me.jpg" alt="me.jpg"/>
               </div>
 
               <div className="me-social w3-margin">
-                <a href="https://www.facebook.com/MarioDeveloper" target="_blank">
+                <a href="https://www.facebook.com/MarioDeveloper" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon className="w3-text-white" icon={['fab','facebook']}/>
                 </a>
-                <a href="https://github.com/panuwatkoktomchai" target="_blank">
+                <a href="https://github.com/panuwatkoktomchai" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon className="w3-text-white" icon={['fab','github']}/>
                 </a>
               </div>
@@ -64,25 +64,25 @@ class Homepage extends React.Component {
                 </header>
                 <div className="w3-container me-description">
                   <ul>
-                    <li className="w3-tag w3-blue"> Programming	language</li>
+                    <li className="w3-tag w3-orange"> Programming	language</li>
                     <ul>
                       <li>
                         : PHP,	SQL	Command,	JavaScript	CSS,	HTML5,	
                       </li>
                     </ul>
-                    <li className="w3-tag w3-blue"> Framework</li>
+                    <li className="w3-tag w3-orange"> Framework</li>
                     <ul>
                       <li>
                         : Bootstrap	4,	Laravel	5.6,	Reactjs,	Vuejs,	Nodejs,	Openlayer, Socket.io,	AngularJs		
                       </li>
                     </ul>
-                    <li className="w3-tag w3-blue"> Databases</li>
+                    <li className="w3-tag w3-orange"> Databases</li>
                     <ul>
                       <li>
                         : MySQL
                       </li>
                     </ul>
-                    <li className="w3-tag w3-blue"> Additional	/	Tool</li>
+                    <li className="w3-tag w3-orange"> Additional	/	Tool</li>
                     <ul>
                       <li>
                         : Gitlab,	Git	Flow,	Gitlab	CI/CD,	postman,	Trello

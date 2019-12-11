@@ -21,7 +21,8 @@ function App() {
       <Suspense fallback={<LoadingOverlay/>}>
         <Switch>
           <Route path="/home" component={Homepage} key="Home-page"/>
-          <Route path="/cv" component={CV} key="Home-page"/>
+          <Route path="/cv" component={CV} key="cv"/>
+          <Route path="/" component={Homepage} key="Home"/>
         </Switch>
       </Suspense>
       </section>
