@@ -28,7 +28,7 @@ class Homepage extends React.Component {
 
           <div className="w3-row w3-black">
             <div className="w3-col m12 l4 w3-padding">
-              <div className="w3-card-4 w3-border w3-border-black w3-hover-border-orange">
+              <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
                   <h1>EXPERIENCE</h1>
                 </header>
@@ -58,7 +58,7 @@ class Homepage extends React.Component {
               </div>
             </div>{/** End class row 12 */}
             <div className="w3-col m12 l4 w3-padding">
-              <div className="w3-card-4 w3-border w3-border-black w3-hover-border-orange">
+              <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
                   <h1>SKILL</h1>
                 </header>
@@ -96,7 +96,7 @@ class Homepage extends React.Component {
               </div>
             </div>{/** End class row 12 */}
             <div className="w3-col m12 l4 w3-padding">
-              <div className="w3-card-4 w3-border w3-border-black w3-hover-border-orange">
+              <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
                   <h1>TRAINING COURSE</h1>
                 </header>
@@ -122,6 +122,8 @@ class Homepage extends React.Component {
 
           <div className="w3-blue-gray w3-container">
             <h1>Contact me</h1>
+            <div className="w3-row">
+            </div>
           </div>
         </div>
       </div>

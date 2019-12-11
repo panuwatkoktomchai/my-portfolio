@@ -29,15 +29,19 @@ class Navbar extends React.Component {
     const { t, i18n } = this.props
     return (
       <Fragment>
-        <div className="w3-bar w3-light-grey custom-nav">
-          <Link to="/home" className="w3-bar-item w3-button w3-orange w3-mobile"><b>{ t('me') }</b></Link>
-          <Link to="/cv" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('cv') }</Link>
-          <Link to="/education" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('hobbie') }</Link>
-          <input type="text" className="w3-bar-item w3-input w3-white w3-mobile" placeholder={ t('input-search') }/>
+        <div className="w3-row w3-bar w3-light-grey custom-nav">
+          <div className="w3-col m12 l10">
+            <Link to="/home" className="w3-bar-item w3-button w3-orange w3-mobile"><b>{ t('me') }</b></Link>
+            <Link to="/cv" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('cv') }</Link>
+            <Link to="/education" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('hobbie') }</Link>
+            {/* <input disabled type="text" className="w3-bar-item w3-input w3-white w3-mobile" placeholder={ t('input-search') }/> */}
+          </div>
+          <div className="w3-col m12 l2">
+            <button onClick={setVisible} className="w3-hover-orange w3-bar-item w3-button w3-clean w3-clean w3-mobile language">
+              { t('lanugage') }: <img src={`./images/${i18n.language}.png`} alt="logo current language" width="20px"/>
+            </button>
+          </div>
           
-          <button onClick={setVisible} className="w3-hover-orange w3-bar-item w3-button w3-clean w3-clean w3-mobile language">
-            { t('lanugage') }: <img src={`./images/${i18n.language}.png`} alt="logo current language" width="20px"/>
-          </button>
 
         </div>
 
