@@ -7,8 +7,8 @@ class Homepage extends React.Component {
     return (
       <div>
         <div>
-          <div style={{height: 500, textAlign: 'center', backgroundImage:'url(http://localhost:3000/images/book-background.jpg)'}} >
-            <div style={{backgroundColor: 'rgba(0,0,0,0.7)', height: '100%'}}>
+          <div style={{height: 500, textAlign: 'center'}} >
+            <div style={{backgroundColor: 'rgba(0,0,0,0.5)', height: '100%'}}>
               <div className="me-title" style={{paddingTop: 10}}>
                 <h1 className="w3-text-white">Panuwat Koktomchai</h1>
                 <h2 className="w3-text-white"><b>Software	Developer</b></h2>

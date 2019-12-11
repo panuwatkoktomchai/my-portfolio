@@ -1,4 +1,9 @@
 @import './assets/style/W3.css';
+body {
+  background-image: url(http://localhost:3000/images/book-background.jpg);
+  background-repeat: round;
+  background-attachment: fixed;
+}
 
 .w3-clean {
   background-color: rgba(0, 0, 0, 0);
