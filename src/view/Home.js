@@ -1,17 +1,22 @@
 import React from 'react'
 import 'assets/style/Home.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { withTranslation } from 'react-i18next';
 
 class Homepage extends React.Component {
+  constructor(props) {
+    super(props)
+  }
   render() {
+    const { t } = this.props
     return (
       <div>
         <div>
           <div style={{textAlign: 'center'}} >
             <div style={{backgroundColor: 'rgba(0,0,0,0.5)', height: '100%'}}>
               <div className="me-title" style={{paddingTop: 10}}>
-                <h1 className="w3-text-white">Panuwat Koktomchai</h1>
-                <h2 className="w3-text-white"><b>Software	Developer</b></h2>
+                <h1 className="w3-text-white"> { t('header.myname') } </h1>
+                <h2 className="w3-text-white"><b>{ t('header.position') }</b></h2>
                 <img style={{height:250, width: 250, borderRadius: '50%'}} src="./images/me.jpg" alt="me.jpg"/>
               </div>
 
@@ -23,66 +28,66 @@ class Homepage extends React.Component {
                   <FontAwesomeIcon className="w3-text-white" icon={['fab','github']}/>
                 </a>
               </div>
+              <hr/>
             </div>
           </div>
-
           <div className="w3-row w3-black">
             <div className="w3-col m12 l4 w3-padding">
               <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
-                  <h1>EXPERIENCE</h1>
+                  <h1>{ t('experience.title') }</h1>
                 </header>
 
                 <div className="w3-container me-description">
                   <ul>
                     <li>
-                      Develop	Back-End	web	application	using	Laravel, Node	with	Mysql	database
+                    { t('experience.des1') }
                     </li>
                     <li>
-                      Develop	Front-End	web	application	using	Reactjs, Vuejs	and	another	JavaScript	framework.	
+                    { t('experience.des2') }
                     </li>
                     <li>
-                      Develop	web	application	with	Docker	containers
+                    { t('experience.des3') }
                     </li>
                     <li>
-                      Testing	and	Maintenance	responsibility project application.
+                    { t('experience.des4') }
                     </li>
                     <li>
-                      Develop	web	application	in	Linux	OS
+                    { t('experience.des5') }
                     </li>
                   </ul>
                 </div>
                 <footer className="w3-container">
-                  <h5 className="w3-text-orange">2018 - Current</h5>
+                  <h5 className="w3-text-orange">{ t('experience.timeline') }</h5>
                 </footer>
               </div>
             </div>{/** End class row 12 */}
             <div className="w3-col m12 l4 w3-padding">
               <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
-                  <h1>SKILL</h1>
+                  <h1>{ t('skill.title') }</h1>
                 </header>
                 <div className="w3-container me-description">
                   <ul>
-                    <li className="w3-tag w3-orange"> Programming	language</li>
+                    <li className="w3-tag w3-orange">{ t('skill.topic1') }</li>
                     <ul>
                       <li>
                         : PHP,	SQL	Command,	JavaScript	CSS,	HTML5,	
                       </li>
                     </ul>
-                    <li className="w3-tag w3-orange"> Framework</li>
+                    <li className="w3-tag w3-orange"> { t('skill.topic2') }</li>
                     <ul>
                       <li>
                         : Bootstrap	4,	Laravel	5.6,	Reactjs,	Vuejs,	Nodejs,	Openlayer, Socket.io,	AngularJs		
                       </li>
                     </ul>
-                    <li className="w3-tag w3-orange"> Databases</li>
+                    <li className="w3-tag w3-orange"> { t('skill.topic3') }</li>
                     <ul>
                       <li>
                         : MySQL
                       </li>
                     </ul>
-                    <li className="w3-tag w3-orange"> Additional	/	Tool</li>
+                    <li className="w3-tag w3-orange"> { t('skill.topic4') }</li>
                     <ul>
                       <li>
                         : Gitlab,	Git	Flow,	Gitlab	CI/CD,	postman,	Trello
@@ -91,14 +96,14 @@ class Homepage extends React.Component {
                   </ul>
                 </div>
                 <footer className="w3-container">
-                  <h5 className="w3-text-orange">2018 - Current</h5>
+                  <h5 className="w3-text-orange">{ t('skill.timeline') }</h5>
                 </footer>
               </div>
             </div>{/** End class row 12 */}
             <div className="w3-col m12 l4 w3-padding">
               <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange">
                 <header className="w3-container w3-blue-gray w3-hover-orange w3-text-white">
-                  <h1>TRAINING COURSE</h1>
+                  <h1>{ t('training.title') }</h1>
                 </header>
                 <div className="w3-container me-description">
                     <ul>
@@ -114,21 +119,22 @@ class Homepage extends React.Component {
                     </ul>
                 </div>
                 <footer className="w3-container">
-                  <h5 className="w3-text-orange">2018 - Current</h5>
+                  <h5 className="w3-text-orange">{ t('training.timeline') }</h5>
                 </footer>
               </div>
             </div> {/** End class row 12 */}
           </div>{/** End block row */}
 
-          <div className="w3-blue-gray w3-container">
+          {/* <div className="w3-blue-gray w3-container">
             <h1>Contact me</h1>
             <div className="w3-row">
             </div>
-          </div>
+          </div> */}
+          
         </div>
       </div>
     )
   }
 }
 
-export default Homepage
+export default withTranslation('homepage')(Homepage)
