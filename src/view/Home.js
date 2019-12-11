@@ -16,10 +16,10 @@ class Homepage extends React.Component {
               </div>
 
               <div className="me-social w3-margin">
-                <a href="https://www.facebook.com/MarioDeveloper">
+                <a href="https://www.facebook.com/MarioDeveloper" target="_blank">
                   <FontAwesomeIcon className="w3-text-white" icon={['fab','facebook']}/>
                 </a>
-                <a href="https://github.com/panuwatkoktomchai">
+                <a href="https://github.com/panuwatkoktomchai" target="_blank">
                   <FontAwesomeIcon className="w3-text-white" icon={['fab','github']}/>
                 </a>
               </div>
