@@ -120,9 +120,9 @@ class Homepage extends React.Component {
             </div> {/** End class row 12 */}
           </div>{/** End block row */}
 
-          {/* <div className="w3-blue-gray w3-container">
+          <div className="w3-blue-gray w3-container">
             <h1>Contact me</h1>
-          </div> */}
+          </div>
         </div>
       </div>
     )
