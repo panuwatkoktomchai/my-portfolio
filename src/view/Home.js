@@ -4,9 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { withTranslation } from 'react-i18next';
 
 class Homepage extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     const { t } = this.props
     return (
