@@ -1,8 +1,14 @@
 @import './assets/style/W3.css';
 body {
   background-image: url(http://localhost:3000/images/book-background.jpg);
-  background-repeat: round;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+}
+
+.w3-black-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .w3-clean {
