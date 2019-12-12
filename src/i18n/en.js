@@ -2,6 +2,7 @@ const en = {
   'navbar': {
     'me': 'Me',
     'cv'  : 'CV',
+    'contact': 'Contact me',
     'hobbie' : 'Hobbies',
     'input-search': 'Search...',
     'lanugage': 'language',
@@ -45,7 +46,31 @@ const en = {
     'training': {
       'title' : 'TRAINING COURSE',
       'timeline': '2018 - Current'
+    },
+    'aip': {
+      'name': 'AIP',
+      'description': 'Thailand	Aeronautical	Information	Service	(AIS)	Redesigned	CAAT	website	and	develop	content management	system',
+      'footer': '2018. @Piesoft'
+    },
+    'w4t': {
+      'name': 'Water	for	life',
+      'description': 'Department	of	Water	Resource	(DWR). Developed	website	and	service	for	mobile	application	to show	data	such	as	water	situation	information	and Telemetry	location	in	Thailand.',
+      'footer': '2018. @Piesoft'
+    },
+    'tfi': {
+      'name': 'Thai Flight Information',
+      'description': 'Department of Airports. Maintenance website[CMS] Service of mobile and Database.',
+      'footer': '2018 -. @Piesoft'
+    },
+    'gistda': {
+      'name': 'GISTDA (Suvarnabhumi app)',
+      'description': 'Geo-Informatics and Space Technology Development Agency. Developed website and service to manage and show geolocation such as historical location.',
+      'footer': '2019. @Piesoft'
     }
+  },
+  'project': {
+    'website': 'Website :',
+    'tool': 'Tool :'
   }
 }
 
