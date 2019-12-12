@@ -1,8 +1,8 @@
 import React from 'react'
-import 'assets/style/Home.scss'
 import { withTranslation } from 'react-i18next';
-import Card from 'components/Card'
 import Me from 'components/Me'
+import Card from 'components/Card'
+import MyProject from 'components/MyProject'
 
 class Homepage extends React.Component {
   render() {
@@ -90,119 +90,55 @@ class Homepage extends React.Component {
             </div> {/** End class row 12 */}
           </div>{/** End block row */}
 
-          <div className="w3-container" style={{backgroundColor: 'rgba(0,0,0,0.5)'}}>
-              <hr className="w3-white"/>
-            <div>
-              <div className="w3-padding w3-center">
-                <h1 className="me-font w3-text-white w3-black w3-round-large "><b>Project</b></h1>
-              </div>
-              <div className="w3-row">
-                <div className="w3-card w3-container w3-text-white w3-border w3-border-black w3-hover-border-orange w3-round-large w3-col m12 l6">
-                  <div style={{height: 200}} className="w3-center w3-margin">
-                    <img width="200px" src="https://ais.caat.or.th/dist/img/logo-ais.png" alt="ais logo"/>
-                  </div>
-                  <div className="w3-center">
-                    <h2 className="me-font"><u>API</u></h2>
-                    <p className="me-description">	Thailand	Aeronautical	Information	Service	(AIS)	Redesigned	CAAT	website	and	develop	content management	system</p>
-                    <br/>
-                    <div className="me-font"><b>Website :</b></div>
-                    <a className="me-description me-non-underline w3-hover-orange" href="https://ais.caat.or.th/" target="_blank" rel="noopener noreferrer">https://ais.caat.or.th</a>
-                    <br/>
-                    <br/>
-                    <div><b>Tool :</b></div>
-                    <img className="w3-margin" alt="laravel icon" src="./images/laravel.png" width="100px"/>
-                    <img className="w3-margin" alt="mysql icon" src="./images/mysql.png" width="100px"/>
-                    <img className="w3-margin" alt="docker icon" src="./images/docker.png" width="100px"/>
-                    <img className="w3-margin" alt="bootstrap icon" src="./images/bootstrap.png" width="100px"/>
-                    <img className="w3-margin" alt="javascrip icon" src="./images/javascrip.jpg" width="100px"/>
-                  </div>
-                  <div className="w3-container me-font">
-                    2018. @Piesoft
-                  </div>
-                </div>
-
-                <div className="w3-card w3-text-white w3-border w3-border-black w3-hover-border-orange w3-round-large w3-col m12 l6 w3-padding">
-                  <div style={{height: 200}} className="w3-center w3-margin">
-                    <img width="200px" src="https://mobile.dwr.go.th/resources/adminLTE-2.4.2/dist/img/logo-water.png" alt="ais logo"/>
-                  </div>
-                  <div className="w3-center">
-                    <h2 className="me-font"><u>Water	for	life</u></h2>
-                    <p className="me-description">Department	of	Water	Resource	(DWR). Developed	website	and	service	for	mobile	application	to show	data	such	as	water	situation	information	and Telemetry	location	in	Thailand.</p>
-                    <br/>
-                    <div className="me-font"><b>Website :</b></div>
-                    -
-                    <br/>
-                    <br/>
-                    <div><b>Tool :</b></div>
-                    <img className="w3-margin" alt="laravel icon" src="./images/laravel.png" width="100px"/>
-                    <img className="w3-margin" alt="socket icon" src="./images/soketio.png" width="100px"/>
-                    <img className="w3-margin" alt="graphql icon" src="./images/graphql.png" width="100px"/>
-                    <img className="w3-margin" alt="mysql icon" src="./images/mysql.png" width="100px"/>
-                    <img className="w3-margin" alt="docker icon" src="./images/docker.png" width="100px"/>
-                    <img className="w3-margin" alt="bootstrap icon" src="./images/bootstrap.png" width="100px"/>
-                    <img className="w3-margin" alt="javascrip icon" src="./images/javascrip.jpg" width="100px"/>
-                  </div>
-                  <div className="w3-container me-font">
-                    2018. @Piesoft
-                  </div>
-                </div>
-
-                <div className="w3-card w3-text-white w3-border w3-border-black w3-hover-border-orange w3-round-large w3-col m12 l6 w3-padding">
-                  <div style={{height: 200}} className="w3-center w3-margin">
-                    <img width="200px" src="./images/tfic.png" alt="ais logo"/>
-                  </div>
-                  <div className="w3-center">
-                    <h2 className="me-font"><u>Thai	Flight	Information</u></h2>
-                    <p className="me-description">Department	of	Airports. Maintenance	website[CMS] Service of mobile and Database.</p>
-                    <br/>
-                    <div className="me-font"><b>Website :</b></div>
-                    -
-                    <br/>
-                    <br/>
-                    <div><b>Tool :</b></div>
-                    <img className="w3-margin" alt="php icon" src="./images/php.png" width="100px"/>
-                    <img className="w3-margin" alt="laravel icon" src="./images/laravel.png" width="100px"/>
-                    <img className="w3-margin" alt="socket icon" src="./images/soketio.png" width="100px"/>
-                    <img className="w3-margin" alt="mysql icon" src="./images/mysql.png" width="100px"/>
-                    <img className="w3-margin" alt="javascrip icon" src="./images/javascrip.jpg" width="100px"/>
-                  </div>
-                  <div className="w3-container me-font">
-                    2018-2019. @Piesoft
-                  </div>
-                </div>
-
-                <div className="w3-card w3-text-white w3-border w3-border-black w3-hover-border-orange w3-round-large w3-col m12 l6 w3-padding">
-                  <div style={{height: 200}} className="w3-center w3-margin">
-                    <img width="200px" src="https://suvarnabhumimap.gistda.or.th/assets/images/gistda-logo.png" alt="ais logo"/>
-                  </div>
-                  <div className="w3-center">
-                    <h2 className="me-font"><u>GISTDA	(Suvarnabhumi	app)</u></h2>
-                    <p className="me-description">Geo-Informatics	and	Space	Technology	Development Agency.	Developed	website	and	service	to	manage	and show	geolocation	such	as	historical	location.</p>
-                    <br/>
-                    <div className="me-font"><b>Website :</b></div>
-                    <a className="me-description me-non-underline w3-hover-orange" href="https://suvarnabhumimap.gistda.or.th/th" target="_blank" rel="noopener noreferrer">https://suvarnabhumimap.gistda.or.th</a>
-                    <br/>
-                    <br/>
-                    <div><b>Tool :</b></div>
-                    <img className="w3-margin" alt="docker icon" src="./images/docker.png" width="100px"/>
-                    <img className="w3-margin" alt="javascrip icon" src="./images/javascrip.jpg" width="100px"/>
-                    <img className="w3-margin" alt="openlayer icon" src="./images/openlayer.png" width="100px"/>
-                  </div>
-                  <div className="w3-container me-font">
-                    2019. @Piesoft
-                  </div>
-                </div>
-
-              </div> {/** End row */}
-            </div>
-          </div> {/**End content of project */}
-
-          <div>
+          <div className="w3-container" style={{backgroundColor: 'rgba(0,0,0,0.9)', paddingBottom: 100}}>
+            <hr className="w3-white"/>
             <div className="w3-padding w3-center">
-                <h1 className="me-font w3-text-white w3-blue-gray w3-round-large"><b>Contact me</b></h1>
+              <h1 className="me-font w3-text-white w3-round-large w3-hover-orange me-project"><b>Project</b></h1>
+            </div>
+            <div className="w3-row w3-margin">
+              <div className="w3-col m12 l6">
+                <MyProject
+                logo="https://ais.caat.or.th/dist/img/logo-ais.png"
+                projectNmae={ t('aip.name') }
+                description={ t('aip.description') }
+                website="https://ais.caat.or.th/"
+                footer={ t('aip.footer') }
+                tools={['laravel.png', 'mysql.png', 'docker.png', 'bootstrap.png', 'javascrip.jpg']}
+                />
               </div>
-          </div> {/** End Contact me*/}
-          
+              <div className="w3-col m12 l6">
+                <MyProject
+                logo="https://mobile.dwr.go.th/resources/adminLTE-2.4.2/dist/img/logo-water.png"
+                projectNmae={ t('w4t.name') }
+                description={ t('w4t.description') }
+                footer={ t('w4t.footer') }
+                tools={['laravel.png', 'soketio.png', 'graphql.png', 'mysql.png', 'docker.png', 'bootstrap.png', 'javascrip.jpg']}
+                />
+              </div>
+
+              <div className="w3-col m12 l6">
+                <MyProject
+                logo="./images/tfic.png"
+                projectNmae={ t('tfi.name') }
+                description={ t('tfi.description') }
+                footer={ t('tfi.footer') }
+                tools={['php.png', 'laravel.png', 'soketio.png', 'mysql.png', 'bootstrap.png', 'javascrip.jpg']}
+                />
+              </div>
+
+              <div className="w3-col m12 l6">
+                <MyProject
+                logo="https://suvarnabhumimap.gistda.or.th/assets/images/gistda-logo.png"
+                projectNmae={ t('gistda.name') }
+                description={ t('gistda.description') }
+                website="https://suvarnabhumimap.gistda.or.th/th"
+                footer={ t('gistda.footer') }
+                tools={['docker.png', 'javascrip.jpg', 'openlayer.png']}
+                />
+              </div>
+
+            </div> {/** End row */}
+          </div> {/**End content of project */}
         </div>
       </div>
     )
