@@ -2,6 +2,7 @@ const th = {
   'navbar': {
     'me': 'ฉันเอง!',
     'cv'  : 'ใบ CV',
+    'contact': 'ติดต่อฉัน',
     'hobbie' : 'งานอดิเรก',
     'input-search': 'ค้นหา...',
     'lanugage': 'ภาษา',
