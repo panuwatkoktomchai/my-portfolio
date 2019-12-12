@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import Navbar from 'components/Navbar'
 import LoadingOverlay from 'components/LoadingOverlay'
+import Footer from 'components/Footer'
 import {
   BrowserRouter as Router,
   Switch,
@@ -26,6 +27,9 @@ function App() {
         </Switch>
       </Suspense>
       </section>
+      <footer>
+        <Footer/>
+      </footer>
     </Router>
   );
 }
