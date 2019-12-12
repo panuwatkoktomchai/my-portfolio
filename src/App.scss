@@ -1,4 +1,5 @@
 @import './assets/style/W3.css';
+@import './assets/style/Home.scss';
 body {
   background-image: url('./assets/images/book-background.jpg');
   background-position: center;
@@ -14,6 +15,17 @@ body {
 .w3-clean {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: none;
+}
+
+.me-project {
+  text-decoration: underline #ff9800;
+  font-size: 60px;
+}
+
+.me-underline {
+  &-orange {
+    text-decoration: underline #ff9800;
+  }
 }
 
 .loading-overlay {
