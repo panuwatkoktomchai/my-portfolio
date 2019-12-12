@@ -33,7 +33,8 @@ class Navbar extends React.Component {
           <div className="w3-col m12 l10">
             <Link to="/home" className="w3-bar-item w3-button w3-orange w3-mobile"><b>{ t('me') }</b></Link>
             <Link to="/cv" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('cv') }</Link>
-            <Link to="/education" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('hobbie') }</Link>
+            <Link to="/hobbies" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('hobbie') }</Link>
+            <Link to="/contact" className="w3-bar-item w3-button w3-hover-orange w3-mobile">{ t('contact') }</Link>
             {/* <input disabled type="text" className="w3-bar-item w3-input w3-white w3-mobile" placeholder={ t('input-search') }/> */}
           </div>
           <div className="w3-col m12 l2">
