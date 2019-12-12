@@ -60,7 +60,7 @@ const en = {
     'tfi': {
       'name': 'Thai Flight Information',
       'description': 'Department of Airports. Maintenance website[CMS] Service of mobile and Database.',
-      'footer': '2018 -. @Piesoft'
+      'footer': '2018 -2019. @Piesoft'
     },
     'gistda': {
       'name': 'GISTDA (Suvarnabhumi app)',

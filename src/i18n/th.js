@@ -46,7 +46,31 @@ const th = {
     'training': {
       'title' : 'หลักสูตรอบรม',
       'timeline': '2561 - ปัจจุบัน'
+    },
+    'aip': {
+      'name': 'AIP',
+      'description': 'Thailand	Aeronautical	Information	Service	(AIS)	Redesigned	CAAT	website	and	develop	content management	system',
+      'footer': '2561. @Piesoft'
+    },
+    'w4t': {
+      'name': 'Water	for	life',
+      'description': 'Department	of	Water	Resource	(DWR). Developed	website	and	service	for	mobile	application	to show	data	such	as	water	situation	information	and Telemetry	location	in	Thailand.',
+      'footer': '2561. @Piesoft'
+    },
+    'tfi': {
+      'name': 'Thai Flight Information',
+      'description': 'Department of Airports. Maintenance website[CMS] Service of mobile and Database.',
+      'footer': '2561 -2562. @Piesoft'
+    },
+    'gistda': {
+      'name': 'GISTDA (Suvarnabhumi app)',
+      'description': 'Geo-Informatics and Space Technology Development Agency. Developed website and service to manage and show geolocation such as historical location.',
+      'footer': '2562. @Piesoft'
     }
+  },
+  'project': {
+    'website': 'เว็บไซต์ :',
+    'tool': 'เครื่องมือ :'
   }
 }
 
