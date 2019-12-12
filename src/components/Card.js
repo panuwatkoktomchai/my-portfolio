@@ -2,11 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 function Card(props) {
-  return(
-    <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange w3-round-large">
-      <header className="w3-container w3-blue-gray w3-round-large w3-hover-orange w3-text-white">
+  const Title = props.noTitle ? '' : () => {
+    return(
+      <header className="me-underline-orange w3-container w3-blue-gray w3-round-large w3-hover-orange w3-text-white">
         <h1>{ props.title }</h1>
       </header>
+    )
+  }
+  return(
+    <div className="me-card-info w3-card-4 w3-border w3-border-black w3-hover-border-orange w3-round-large">
+      <Title></Title>
       <div className="w3-container me-description">
         {props.children}
       </div>
@@ -18,9 +23,13 @@ function Card(props) {
 }
 
 Card.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  noTitle: PropTypes.bool,
   footer: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired
+}
+Card.defaultProps = {
+  noTitle: false
 }
 
 
