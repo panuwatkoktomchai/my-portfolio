@@ -11,6 +11,7 @@ import './i18n';
 
 const Homepage = lazy(() => import('view/Home'))
 const CV = lazy(() => import('view/Cv'))
+const ContactMe = lazy(() => import('view/ContactMe'))
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Switch>
           <Route path="/home" component={Homepage} key="Home-page"/>
           <Route path="/cv" component={CV} key="cv"/>
+          <Route path="/contact" component={ContactMe} key="contactme"/>
           <Route path="/" component={Homepage} key="Home"/>
         </Switch>
       </Suspense>

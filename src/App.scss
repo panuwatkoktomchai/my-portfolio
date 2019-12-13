@@ -33,3 +33,17 @@ body {
   top: 50%;
   left: 50%;
 }
+.me-contact {
+  padding-top: 50px;
+  padding-left: 50px;
+  & .me-icon {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    & .icon {
+
+      font-size: 90px;
+      margin-bottom:40px
+    }
+  }
+}

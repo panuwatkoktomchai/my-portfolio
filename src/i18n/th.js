@@ -71,6 +71,9 @@ const th = {
   'project': {
     'website': 'เว็บไซต์ :',
     'tool': 'เครื่องมือ :'
+  },
+  'contact': {
+    'copy': 'Copy text'
   }
 }
 

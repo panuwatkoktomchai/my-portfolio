@@ -71,6 +71,9 @@ const en = {
   'project': {
     'website': 'Website :',
     'tool': 'Tool :'
+  },
+  'contact': {
+    'copy': 'Copy text'
   }
 }
 
