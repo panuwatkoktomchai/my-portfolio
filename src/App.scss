@@ -47,3 +47,17 @@ body {
     }
   }
 }
+
+.me-warn-icon {
+  margin-bottom: 80px;
+  font-size: 100px;
+}
+
+.me-margin {
+  &-bottom {
+    margin-bottom: 100px;
+  }
+  &-top {
+    margin-top: 100px;
+  }
+}

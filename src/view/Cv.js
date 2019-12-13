@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import pdf from 'assets/My-portfolio-blue.pdf';
 import { BrowserView, MobileView } from "react-device-detect";
+import Warnning from 'components/Warning'
 
 export default class CV extends Component {
   state = {
@@ -12,10 +13,13 @@ export default class CV extends Component {
       // <embed scrolling="no" src={pdf} width="100%" height={window.innerHeight-194}/>
       <div>
         <MobileView>
-          <div className="w3-black" style={{textAlign: 'center'}}>
-            <h2 className="w3-text-white">Your device don't support this page</h2>
-            <span className="w3-white">Click button to download</span><br/>
-            <a href={pdf} className="w3-button w3-blue">Download</a>
+          <div className="w3-padding" style={{textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.5)'}}>
+            <Warnning>
+              <div>
+                <span className="w3-text-white">Click button to download</span><br/>
+                <a href={pdf} className="w3-button w3-blue">Download</a>
+              </div>
+            </Warnning>
           </div>
         </MobileView>
         <BrowserView>

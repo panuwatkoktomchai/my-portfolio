@@ -12,7 +12,7 @@ function ContactItem(props) {
       <FontAwesomeIcon className="icon" icon={ props.icon }/><br/>
       <p > { props.text } </p>
       <CopyToClipboard text={ props.text }>
-        <button className="w3-button w3-black-transparent w3-round-large w3-gray"> { t('copy') }  <FontAwesomeIcon icon="copy"/><br/> </button>
+        <button className="w3-button w3-orange"> { t('copy') }  <FontAwesomeIcon icon="copy"/><br/> </button>
       </CopyToClipboard>
     </Fragment>
   )

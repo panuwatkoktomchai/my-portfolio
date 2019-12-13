@@ -1,7 +1,7 @@
 // Fortawesome Icon
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faFacebook, faGithub, faLine } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faCircleNotch, faPhone, faEnvelopeOpen, faCopy } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faCircleNotch, faPhone, faEnvelopeOpen, faCopy, faExclamationCircle } from '@fortawesome/free-solid-svg-icons'
 library.add(
   fab,
   faCheckSquare, 
@@ -12,5 +12,6 @@ library.add(
   faPhone,
   faEnvelopeOpen,
   faLine,
-  faCopy
+  faCopy,
+  faExclamationCircle
   )

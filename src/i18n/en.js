@@ -44,7 +44,7 @@ const en = {
       'timeline': '2018 - Current',
     },
     'training': {
-      'title' : 'TRAINING COURSE',
+      'title' : 'TRAINING',
       'timeline': '2018 - Current'
     },
     'aip': {
