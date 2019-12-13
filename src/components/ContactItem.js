@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 function ContactItem(props) {
   const { t } = props
-  console.log(props.icon)
   return (
     <Fragment>
       <input hidden value={ props.text } onChange={ () => {} }/>
