@@ -13,7 +13,7 @@ export default class CV extends Component {
       // <embed scrolling="no" src={pdf} width="100%" height={window.innerHeight-194}/>
       <div>
         <MobileView>
-          <div className="w3-padding" style={{textAlign: 'center', backgroundColor: 'rgba(0,0,0,0.5)'}}>
+          <div className="w3-padding" style={{backgroundColor: 'rgba(0,0,0,0.5)'}}>
             <Warnning>
               <div>
                 <span className="w3-text-white">Click button to download</span><br/>

@@ -53,11 +53,18 @@ body {
   font-size: 100px;
 }
 
-.me-margin {
-  &-bottom {
-    margin-bottom: 100px;
+.me {
+  &-margin {
+    &-bottom {
+      margin-bottom: 100px;
+    }
+    &-top {
+      margin-top: 100px;
+    }
   }
-  &-top {
-    margin-top: 100px;
+  &-padding {
+    &-top {
+      padding-top: 100px;
+    }
   }
 }
