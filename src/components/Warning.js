@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 function Warning(props) {
   return (
-    <div style={{ height:window.innerHeight-406 }}>
-      <div className="w3-text-white me-padding-top">
-        <FontAwesomeIcon className="me-warn-icon" icon="exclamation-circle"/>
+    <div>
+      <div className="w3-text-white">
+        <FontAwesomeIcon className="me-warn-icon me-margin-top" icon="exclamation-circle"/>
       </div>
       <div className="me-font me-margin-bottom">
         <h2 className="w3-text-white me-font">{props.text}</h2>

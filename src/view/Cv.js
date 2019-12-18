@@ -10,7 +10,6 @@ export default class CV extends Component {
 
   render() {
     return (
-      // <embed scrolling="no" src={pdf} width="100%" height={window.innerHeight-194}/>
       <div>
         <MobileView>
           <div className="w3-padding" style={{backgroundColor: 'rgba(0,0,0,0.5)'}}>
