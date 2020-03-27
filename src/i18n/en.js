@@ -6,6 +6,7 @@ const en = {
     'hobbie' : 'Hobbies',
     'input-search': 'Search...',
     'lanugage': 'language',
+    'project': "Project",
     'modal': {
       'title': 'Choose your language'
     }

@@ -6,6 +6,7 @@ const th = {
     'hobbie' : 'งานอดิเรก',
     'input-search': 'ค้นหา...',
     'lanugage': 'ภาษา',
+    'project': "ผลงาน",
     'modal': {
       'title': 'เลือกภาษาของคุณ'
     }

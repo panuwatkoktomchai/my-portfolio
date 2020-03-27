@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types';
 
 function Me(props) {
-  const { t } = props
   const facebook = !props.facebookIcon ? '' : (
       <a href="https://www.facebook.com/MarioDeveloper" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon className="w3-text-white" icon={['fab','facebook']}/>

@@ -26,6 +26,7 @@ function App() {
           <Route path="/cv" component={CV} key="cv"/>
           <Route path="/contact" component={ContactMe} key="contactme"/>
           <Route path="/hobbies" component={Hobbie} key="hobies"/>
+          <Route path="/project" component={Hobbie} key="hobies"/>
           <Route path="/" component={Homepage} key="Home"/>
         </Switch>
       </Suspense>
