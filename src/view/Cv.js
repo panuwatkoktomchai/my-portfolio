@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import pdf from 'assets/My-portfolio-blue.pdf';
+import pdf from 'assets/My-portfolio.pdf';
 import { BrowserView, MobileView } from "react-device-detect";
 import Warnning from 'components/Warning'
 
