@@ -13,6 +13,7 @@ const Homepage = lazy(() => import('view/Home'))
 const CV = lazy(() => import('view/Cv'))
 const ContactMe = lazy(() => import('view/ContactMe'))
 const Hobbie = lazy(() => import('view/Hobbies'))
+const Project = lazy(() => import('view/project'))
 function App() {
   return (
     <Router>
@@ -26,7 +27,7 @@ function App() {
           <Route path="/cv" component={CV} key="cv"/>
           <Route path="/contact" component={ContactMe} key="contactme"/>
           <Route path="/hobbies" component={Hobbie} key="hobies"/>
-          <Route path="/project" component={Hobbie} key="hobies"/>
+          <Route path="/project" component={Project} key="hobies"/>
           <Route path="/" component={Homepage} key="Home"/>
         </Switch>
       </Suspense>
