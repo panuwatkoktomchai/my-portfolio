@@ -19,8 +19,8 @@ function Me(props) {
     <div style={{textAlign: 'center'}} >
       <div style={{backgroundColor: 'rgba(0,0,0,0.5)', height: '100%'}}>
         <div className="me-title" style={{paddingTop: 10}}>
-          <h1 className="w3-text-white"> { t('header.myname') } </h1>
-          <h2 className="w3-text-white"><b>{ t('header.position') }</b></h2>
+          <h1 className="w3-text-white"> { props.title } </h1>
+          <h2 className="w3-text-white"><b>{ props.subtitle }</b></h2>
           <img style={{height:250, width: 250, borderRadius: '50%'}} src="./images/me.jpg" alt="me.jpg"/>
         </div>
 
@@ -37,12 +37,16 @@ function Me(props) {
 
 Me.propTypes = {
   facebookIcon: PropTypes.bool,
-  githubIcon: PropTypes.bool
+  githubIcon: PropTypes.bool,
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 }
 
 Me.defaultProps = {
   facebookIcon: true,
-  githubIcon: true
+  githubIcon: true,
+  title: 'Panuwat koktomchai',
+  subtitle: 'Software Developer'
 }
 
 export default withTranslation('homepage')(Me)

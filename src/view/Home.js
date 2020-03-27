@@ -10,7 +10,10 @@ class Homepage extends React.Component {
     return (
       <div>
         <div>
-          <Me/>
+          <Me
+          title={ t('header.myname') }
+          titletitle={ t('header.position') }
+          />
           <div className="w3-row " style={{backgroundColor: 'rgba(0,0,0,0.9)', color: 'white'}}>
             <div className="w3-col m12 l4 w3-padding">
               <Card
@@ -145,4 +148,4 @@ class Homepage extends React.Component {
   }
 }
 
-export default withTranslation('homepage')(Homepage)
+export default withTranslation(['homepage'])(Homepage)

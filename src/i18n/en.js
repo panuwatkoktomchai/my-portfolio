@@ -74,6 +74,11 @@ const en = {
   },
   'contact': {
     'copy': 'Copy text'
+  },
+  'footer': {
+    'tanks': 'Thank you for visiting',
+    'tool': 'Develop with ',
+    'version': 'version 1.0.0'
   }
 }
 

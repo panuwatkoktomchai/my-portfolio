@@ -1,6 +1,6 @@
 const th = {
   'navbar': {
-    'me': 'ฉันเอง!',
+    'me': 'ฉัน!',
     'cv'  : 'ใบ CV',
     'contact': 'ติดต่อฉัน',
     'hobbie' : 'งานอดิเรก',
@@ -73,8 +73,15 @@ const th = {
     'tool': 'เครื่องมือ :'
   },
   'contact': {
-    'copy': 'Copy text'
+    'copy': 'คัดลอก'
+  },
+  'footer': {
+    'tanks': 'ขอบคุณสำหรับการเยี่ยมชม',
+    'tool': 'พัมนาเว็บไซต์ด้วย ',
+    'version': 'เวอร์ชั่น 1.0.0'
   }
+
+  
 }
 
 export default th
