@@ -1,67 +1,61 @@
-import React, { useState } from 'react'
-
-function Carousel(props) {
-  const [ slideIndex, setSlideIndex ] = useState(1)
-
-  const plusDivs = n => {
-    showDivs(slideIndex += n);
-  }
-
-  const showDivs = n => {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";
-  }
-  return (
-    <div>
-      <div className="w3-display-container mySlides">
-        <img src="https://www.w3schools.com/w3css/img_snowtops.jpg" style={{ width: '100%' }}/>
-        <div className="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-          French Alps
-        </div>
-      </div>
-
-      <div className="w3-display-container mySlides">
-        <img src="https://www.w3schools.com/w3css/img_lights.jpg" style={{ width: '100%' }}/>
-        <div className="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-          Northern Lights
-        </div>
-      </div>
-
-      <div className="w3-display-container mySlides">
-        <img src="https://www.w3schools.com/w3css/img_mountains.jpg" style={{ width: '100%' }}/>
-        <div className="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-          Beautiful Mountains
-        </div>
-      </div>
-
-      <div className="w3-display-container mySlides">
-        <img src="https://www.w3schools.com/w3css/img_forest.jpg" style={{ width: '100%' }}/>
-        <div className="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-          The Rain Forest
-        </div>
-      </div>
-
-      <div className="w3-display-container mySlides">
-        <img src="https://www.w3schools.com/w3css/img_mountains.jpg" style={{ width: '100%' }}/>
-        <div className="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
-          Mountains!
-        </div>
-      </div>
-
-      <button className="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-      <button className="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-    </div>
-  )
+import React, { useState, Fragment, useEffect } from 'react'
+import PropTypes from 'prop-types';
+function Item(props) {
+	return (
+		<Fragment>
+			<img src={ props.src } style={{ width: '100%' }}/>
+			{
+				props.position ?
+				<div className={ `w3-display-${ props.position } w3-large w3-container w3-padding-16 w3-black` }>
+					{ props.title }
+				</div> : ''
+			}
+		</Fragment>
+	)
+}
+Item.propTypes = {
+	title: PropTypes.string,
+	src: PropTypes.string,
+	position: PropTypes.oneOf([ 'bottomleft', 'bottomright', 'topleft', 'topright', 'middle' ])
 }
 
-Carousel.defaultProps = {
-
+Item.defaultProps = {
+	title: 'Carousel Title',
+	position: null
 }
 
-export default Carousel;
+function Carousel(props) { 
+
+	const [ slideIndex, setSlideIndex ] = useState(0)
+	const [ effectSlide, setEffectSlide ] = useState()
+	const plusDivs = n => {
+		setEffectSlide( n > 0 ? 'w3-animate-right': 'w3-animate-left')
+		let length = props.children.length
+		if (slideIndex + n > length -1) { setSlideIndex(0) }
+		else if (slideIndex + n < 0) { setSlideIndex(length-1) }
+		else { setSlideIndex(slideIndex + n) }
+	}
+
+	return (
+		<div className="w3-content w3-display-container">
+			{ 
+			props.children.map((each, key) => 
+				<div key={key} className={`w3-display-container ${ slideIndex === key ? effectSlide : 'w3-hide' }`}>
+					{ each }
+				</div>
+			) 
+			}
+			<button className="w3-button w3-display-left w3-black" onClick={ e => plusDivs(-1) }>&#10094;</button>
+			<button className="w3-button w3-display-right w3-black" onClick={ e => plusDivs(1) }>&#10095;</button>
+
+		</div>
+	)
+}
+
+Carousel.propTypes = {
+	slideIndex: PropTypes.number,
+	children: PropTypes.array
+}
+
+
+export { Carousel, Item };
