@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { GistdaMap } from './Project'
 const Project = (props) => {
-	console.log(GistdaMap)
 	const [ page, setPage ] = useState(GistdaMap)
 	const changeTab = (page) => {
 		setPage(page)

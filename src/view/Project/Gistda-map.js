@@ -10,7 +10,7 @@ const GistdaMap = (props) => (
 				<p className="me-text me-tab-space">Geo-Informatics and Space Technology Development Agency. Developed website and service to manage and show geolocation such as historical location.</p>
 			</div>
 			
-			<h3 className="me-font w3-leftbar w3-border-blue"> Example web page (Under development)</h3>
+			<h3 className="me-font w3-leftbar w3-border-blue"> &nbsp;&nbsp;Example web page (Under development)</h3>
 			<Carousel>
 				<Item
 				title="Piesoft 2019 - 2020"
@@ -82,6 +82,64 @@ const GistdaMap = (props) => (
 			</div>
 
 		</div>  {/** End tag each a Project */}
+		<br/>
+		<hr/>
+		<br/>
+
+		<div className="project-item w3-margin-top">
+			<div className="w3-margin-left">
+				<h2 className="me-font">GISTDA (Suvarnabhumi app)</h2>
+			</div>
+			<h3 className="me-font w3-leftbar w3-border-blue"> &nbsp;&nbsp;WebSite : <a target="__blank" href="https://suvarnabhumimap.gistda.or.th">suvarnabhumimap.gistda.or.th</a></h3>
+			<Carousel>
+				<Item
+				title="Piesoft 2018 - 2019"
+				src="https://bn1303files.storage.live.com/y4pJjOFEGOR-_gumvvIG_UjR8xATXOXsUL4YsQ4JYDGo51apUwA7d8dsHL1F_NJ_BRFxjVfc4UzCQYJFJzlW5RAliQZZcAa0ujh30L5V12xxBPj0HbLR1x5J3zCV1xesstepZpt9WSKGgfGtQl3hvAfs1SbATV2KO5enKYwMODvfJ301xEwjGd8KcDzpzrVB7_rCrHHxwtFA-8bUAH8uG6MFqmjPuO6twHSWTYhVzfZ5iw/Screenshot%20from%202020-03-28%2021-24-31.png?psid=1&width=1805&height=941"
+				position="bottomright"
+				/>
+				<Item
+				title="Piesoft 2018 - 2019"
+				src="https://bn1303files.storage.live.com/y4pVk4rVeXxJtYvVmBejZNxoxpNGLlg5Xv0GCHrEzmQ4BwRGIWfBFdOEry7K_4Fos6LOLnyW6D-qOMDQjWZPMw-jJZT9bOEPb8TW2J8VlstMWtIhPL_hNH0Yoq3FneIhQ5hwoFrNdFlIGc-sj0Dpy8RCNs82qdInKRzcJ2IVTCgf2Zi_Wn-mbhE8wlvB-YJdNWSYRekfRiE-8K7kpELoQdtBccvSnf5bwcFZp5EDbqywP8/Screenshot%20from%202020-03-28%2021-20-34.png?psid=1&width=1814&height=941"
+				position="bottomright"
+				/>
+				<Item
+				title="Piesoft 2018 - 2019"
+				src="https://bn1303files.storage.live.com/y4p6WRKl6J27uJjAsu4XptFxoNGFLlX5IEkdbHIUHw2mezNr_n3IlzFRu2zRuXF7MjRyuO0rVy-j2vkPizKCjWHZoCWpWXbrlMnX_DSEE71m3Ft6GvWWZ_I3DMam9y5c3OgcEJA0nVOtzx7bjWwtq-nujt8VEY32--xaWCYudv5yjT1pbWyx9Bnit8egkGB0dSNFoxQQKr5n1PlTfDD6ihuzk9emdID_HzypGlt-vrWixM/Screenshot%20from%202020-03-28%2021-23-16.png?psid=1&width=1805&height=941"
+				position="bottomright"
+				/>
+			</Carousel>
+
+			<h2 className="me-font"> Architecture structure </h2>
+			<div className="w3-margin me-font" style={{ fontSize: '16pt'}}>
+			<table className="w3-table w3-black-transparent w3-hoverable">
+				<tbody className="w3-margin">
+					<tr className="">
+						<td><b>Front-end</b></td>
+						<td>
+							<span className="w3-tag w3-orange w3-margin-right"> 
+								<a target="__blank" href="https://nextjs.org/">HTML5, Javascript, Jquery, css</a>
+							</span>
+						</td>
+						<td> - </td>
+					</tr>
+					<tr>
+						<td><b>Service</b></td>
+						<td>GEO server</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td> <b>Other</b> </td>
+						<td>
+							<span className="w3-tag w3-teal">
+								<a href="https://openlayers.org/">Openlayers</a>
+							</span>
+						</td>
+						<td>A high-performance, feature-packed library for mapping</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div> {/** End tag each a Project */}
 
 	</div>
 )
