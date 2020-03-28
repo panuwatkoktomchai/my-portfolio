@@ -48,12 +48,11 @@ body {
   }
 }
 
-.me-warn-icon {
-  margin-bottom: 80px;
-  font-size: 100px;
-}
-
 .me {
+  &-warn-icon {
+    margin-bottom: 80px;
+    font-size: 100px;
+  }
   &-margin {
     &-bottom {
       margin-bottom: 100px;
@@ -67,4 +66,13 @@ body {
       padding-top: 100px;
     }
   }
+  &-text {
+    font-size: 16pt;
+  }
+  &-tab-space {
+    display:inline; 
+    margin-left: 40px; 
+  }
 }
+
+
