@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GistdaMap } from './Project'
+import { GistdaMap, Fis } from './Project'
 const Project = (props) => {
 	const [ page, setPage ] = useState(GistdaMap)
 	const changeTab = (page) => {
@@ -10,10 +10,10 @@ const Project = (props) => {
 		<div className="">
 			<div className="w3-bar w3-black">
 				<button className="w3-bar-item w3-button" onClick={ e => changeTab(GistdaMap) }>
-					<h3>GISTDA-Map </h3>
+					<h3>GISTDA</h3>
 				</button>
-				<button className="w3-bar-item w3-button" onClick={ e => changeTab() }>
-					<h3>GISTDA-App</h3>
+				<button className="w3-bar-item w3-button" onClick={ e => changeTab(Fis) }>
+					<h3>Thai Flight Information</h3>
 				</button>
 				<button className="w3-bar-item w3-button" onClick={ e => changeTab() }>
 					<h3>Tokyo</h3>
