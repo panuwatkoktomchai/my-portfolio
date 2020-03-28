@@ -6,8 +6,8 @@ const AIP = (props) => (
 
 		<div className="project-item">
 			<div className="w3-margin-left">
-				<h2 className="me-font">Water for life </h2>
-				<p className="me-text me-tab-space">Department of Water Resource (DWR). Developed website and service for mobile application to show data such as water situation information and Telemetry location in Thailand.</p>
+				<h2 className="me-font">AIP </h2>
+				<p className="me-text me-tab-space">Thailand Aeronautical Information Service (AIS) Redesigned CAAT website and develop content management system.</p>
 			</div>
 			
 			<h3 className="me-font w3-leftbar w3-border-blue"> &nbsp;&nbsp;WebSite : <a target="__blank" href="https://ais.caat.or.th/">www.ais.caat.or.th</a></h3>
@@ -67,7 +67,7 @@ const AIP = (props) => (
 								<a href="https://crontab.guru/">Crontab</a>
 							</span>
 						</td>
-						<td> Job scheduler sync data from various service providers such as Thai Airways, Stat server </td>
+						<td> Job scheduler sync data from various service providers</td>
 					</tr>
 				</tbody>
 			</table>

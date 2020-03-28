@@ -11,13 +11,13 @@ const Project = (props) => {
 	return(
 		<div className="">
 			<div className="w3-bar w3-black">
-				<button className={`w3-bar-item w3-button ${ active==='gistda' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(GistdaMap, 'gistda') }>
+				<button className={`w3-bar-item w3-button ${ active==='gistda' ? 'w3-border-bottom w3-border-orange w3-gray': ''}`} onClick={ e => changeTab(GistdaMap, 'gistda') }>
 					<h3>GISTDA</h3>
 				</button>
-				<button className={`w3-bar-item w3-button ${ active==='fis' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(Fis, 'fis') }>
+				<button className={`w3-bar-item w3-button ${ active==='fis' ? 'w3-border-bottom w3-border-orange w3-gray': ''}`} onClick={ e => changeTab(Fis, 'fis') }>
 					<h3>Thai Flight Information</h3>
 				</button>
-				<button className={`w3-bar-item w3-button ${ active==='aip' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(AIP, 'aip') }>
+				<button className={`w3-bar-item w3-button ${ active==='aip' ? 'w3-border-bottom w3-border-orange w3-gray': ''}`} onClick={ e => changeTab(AIP, 'aip') }>
 					<h3>AIP</h3>
 				</button>
 			</div>
