@@ -6,7 +6,7 @@ function Footer({ t }) {
   return (
     <div className=" me-footer w3-blue-gray w3-center me-description">
       <h3 className="me-font"> { t('tanks') } </h3>
-      <span> { t('tool') } </span><a href="https://reactjs.org/">Reactjs</a>
+      {/* <span> { t('tool') } </span><a href="https://reactjs.org/">Reactjs</a> */}
       <p>
         { t('version') }
       </p>

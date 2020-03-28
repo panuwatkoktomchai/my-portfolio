@@ -34,7 +34,7 @@ class Navbar extends React.Component {
       <Fragment>
         <div className="w3-row w3-bar w3-light-grey custom-nav">
           <div className="w3-col m12 l10">
-            <Link to="/home" className={`${url==='/home' ? 'w3-orange' : 'w3-hover-orange'} w3-bar-item w3-button w3-mobile`}><b>{ t('me') }</b></Link>
+            <Link to="/home" className={`${url==='/home' || url === '/' ? 'w3-orange' : 'w3-hover-orange'} w3-bar-item w3-button w3-mobile`}><b>{ t('me') }</b></Link>
             <Link to="/cv" className={`${url==='/cv' ? 'w3-orange' : 'w3-hover-orange'} w3-bar-item w3-button w3-mobile`}>{ t('cv') }</Link>
             <Link to="/hobbies" className={`${url==='/hobbies' ? 'w3-orange' : 'w3-hover-orange'} w3-bar-item w3-button w3-mobile`}>{ t('hobbie') }</Link>
             <Link to="/project" className={`${url==='/project' ? 'w3-orange' : 'w3-hover-orange'} w3-bar-item w3-button w3-mobile`}>{ t('project') }</Link>
