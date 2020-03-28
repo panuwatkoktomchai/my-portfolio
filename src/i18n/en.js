@@ -79,7 +79,7 @@ const en = {
   'footer': {
     'tanks': 'Thank you for visiting',
     'tool': 'Develop with ',
-    'version': 'version 1.0.0'
+    'version': 'version 1.0.2'
   }
 }
 
