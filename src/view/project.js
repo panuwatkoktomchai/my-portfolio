@@ -1,22 +1,24 @@
 import React, { useState } from 'react'
-import { GistdaMap, Fis } from './Project'
+import { GistdaMap, Fis, AIP } from './Project'
 const Project = (props) => {
 	const [ page, setPage ] = useState(GistdaMap)
-	const changeTab = (page) => {
+	const [ active, setActive ] = useState('gistda')
+	const changeTab = (page, key) => {
 		setPage(page)
+		setActive(key)
 	}
 
 	return(
 		<div className="">
 			<div className="w3-bar w3-black">
-				<button className="w3-bar-item w3-button" onClick={ e => changeTab(GistdaMap) }>
+				<button className={`w3-bar-item w3-button ${ active==='gistda' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(GistdaMap, 'gistda') }>
 					<h3>GISTDA</h3>
 				</button>
-				<button className="w3-bar-item w3-button" onClick={ e => changeTab(Fis) }>
+				<button className={`w3-bar-item w3-button ${ active==='fis' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(Fis, 'fis') }>
 					<h3>Thai Flight Information</h3>
 				</button>
-				<button className="w3-bar-item w3-button" onClick={ e => changeTab() }>
-					<h3>Tokyo</h3>
+				<button className={`w3-bar-item w3-button ${ active==='aip' ? 'w3-border-bottom': ''}`} onClick={ e => changeTab(AIP, 'aip') }>
+					<h3>AIP</h3>
 				</button>
 			</div>
 	
